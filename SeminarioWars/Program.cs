@@ -10,6 +10,7 @@ namespace SeminarioWars
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
