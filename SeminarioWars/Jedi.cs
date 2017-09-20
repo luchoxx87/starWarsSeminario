@@ -10,11 +10,20 @@ namespace SeminarioWars
     {
         int midiclorianos;
 
+        public Jedi(int unosMidiclorianos, string unNombre, int unaVida) 
+            : base (unNombre, unaVida)
+        {
+            midiclorianos = unosMidiclorianos;
+        }
+
         public override int poderTotal()
         {
             return base.poderTotal() + midiclorianos; 
         }
 
-
+        public override string ToString()
+        {
+            return base.ToString() + midiclorianos.ToString() + " midiclorianos";
+        }
     }
 }
