@@ -12,7 +12,7 @@ namespace SeminarioWars
         int vida;
         List<IArma> armas; 
 
-        public int poderTotal()
+        public virtual int poderTotal()
         {
             return armas.Sum(cadaArma => cadaArma.poderPara(this));
         }
