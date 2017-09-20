@@ -16,7 +16,5 @@ namespace SeminarioWars
         {
             return armas.Sum(cadaArma => cadaArma.poderPara(this));
         }
-
-
     }
 }

@@ -6,15 +6,11 @@ using System.Threading.Tasks;
 
 namespace SeminarioWars
 {
-    class Jedi : Soldado
+    class SableLaser : IArma
     {
-        int midiclorianos;
-
-        public override int poderTotal()
+        public int poderPara(Soldado soldado)
         {
-            return base.poderTotal() + midiclorianos; 
+            return soldado.poderTotal() * 10;
         }
-
-
     }
 }
